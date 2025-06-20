@@ -2,51 +2,57 @@
   "hash": "6d6b73b1",
   "configHash": "b7f2cda5",
   "lockfileHash": "e52ad7a8",
-  "browserHash": "9270a57c",
+  "browserHash": "2e52c05b",
   "optimized": {
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "c48be3a6",
+      "fileHash": "fe14b5d9",
       "needsInterop": true
     },
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "c4f99ced",
+      "fileHash": "68e058fe",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "4efe1e2e",
+      "fileHash": "320dacd7",
       "needsInterop": true
     },
     "next-intl": {
       "src": "../../node_modules/next-intl/dist/esm/development/index.react-client.js",
       "file": "next-intl.js",
-      "fileHash": "74a6c7ce",
+      "fileHash": "d261b2c8",
       "needsInterop": false
     },
     "antd": {
       "src": "../../node_modules/antd/es/index.js",
       "file": "antd.js",
-      "fileHash": "f04723f5",
+      "fileHash": "89e35e55",
       "needsInterop": false
     },
     "@emotion/styled": {
       "src": "../../node_modules/@emotion/styled/dist/emotion-styled.browser.development.esm.js",
       "file": "@emotion_styled.js",
-      "fileHash": "03946da1",
+      "fileHash": "4fcff682",
+      "needsInterop": false
+    },
+    "react-router": {
+      "src": "../../node_modules/react-router/dist/development/index.mjs",
+      "file": "react-router.js",
+      "fileHash": "32e65422",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-HQ6ZTAWL": {
-      "file": "chunk-HQ6ZTAWL.js"
-    },
     "chunk-QOVZGY7A": {
       "file": "chunk-QOVZGY7A.js"
+    },
+    "chunk-HQ6ZTAWL": {
+      "file": "chunk-HQ6ZTAWL.js"
     },
     "chunk-5WQJO2FO": {
       "file": "chunk-5WQJO2FO.js"
