@@ -1,31 +1,55 @@
 {
-  "hash": "67b574c6",
+  "hash": "6d6b73b1",
   "configHash": "b7f2cda5",
-  "lockfileHash": "a0eece45",
-  "browserHash": "4d22b40b",
+  "lockfileHash": "e52ad7a8",
+  "browserHash": "9270a57c",
   "optimized": {
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "7bec8227",
+      "fileHash": "c48be3a6",
       "needsInterop": true
     },
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "876cfab5",
+      "fileHash": "c4f99ced",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "e189c2d9",
+      "fileHash": "4efe1e2e",
       "needsInterop": true
+    },
+    "next-intl": {
+      "src": "../../node_modules/next-intl/dist/esm/development/index.react-client.js",
+      "file": "next-intl.js",
+      "fileHash": "74a6c7ce",
+      "needsInterop": false
+    },
+    "antd": {
+      "src": "../../node_modules/antd/es/index.js",
+      "file": "antd.js",
+      "fileHash": "f04723f5",
+      "needsInterop": false
+    },
+    "@emotion/styled": {
+      "src": "../../node_modules/@emotion/styled/dist/emotion-styled.browser.development.esm.js",
+      "file": "@emotion_styled.js",
+      "fileHash": "03946da1",
+      "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-Y455YYDO": {
-      "file": "chunk-Y455YYDO.js"
+    "chunk-HQ6ZTAWL": {
+      "file": "chunk-HQ6ZTAWL.js"
+    },
+    "chunk-QOVZGY7A": {
+      "file": "chunk-QOVZGY7A.js"
+    },
+    "chunk-5WQJO2FO": {
+      "file": "chunk-5WQJO2FO.js"
     }
   }
 }
