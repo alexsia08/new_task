@@ -2,52 +2,61 @@
   "hash": "6d6b73b1",
   "configHash": "b7f2cda5",
   "lockfileHash": "e52ad7a8",
-  "browserHash": "2e52c05b",
+  "browserHash": "9bb23a69",
   "optimized": {
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "fe14b5d9",
+      "fileHash": "1ec5c42b",
       "needsInterop": true
     },
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "68e058fe",
+      "fileHash": "6a6fec34",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "320dacd7",
+      "fileHash": "028c1fe1",
       "needsInterop": true
     },
     "next-intl": {
       "src": "../../node_modules/next-intl/dist/esm/development/index.react-client.js",
       "file": "next-intl.js",
-      "fileHash": "d261b2c8",
+      "fileHash": "8e156c28",
       "needsInterop": false
     },
     "antd": {
       "src": "../../node_modules/antd/es/index.js",
       "file": "antd.js",
-      "fileHash": "89e35e55",
+      "fileHash": "3bc8f581",
       "needsInterop": false
     },
     "@emotion/styled": {
       "src": "../../node_modules/@emotion/styled/dist/emotion-styled.browser.development.esm.js",
       "file": "@emotion_styled.js",
-      "fileHash": "4fcff682",
+      "fileHash": "3f1c401b",
       "needsInterop": false
     },
     "react-router": {
       "src": "../../node_modules/react-router/dist/development/index.mjs",
       "file": "react-router.js",
-      "fileHash": "32e65422",
+      "fileHash": "cf7c2ed5",
+      "needsInterop": false
+    },
+    "antd/es/app/App": {
+      "src": "../../node_modules/antd/es/app/App.js",
+      "file": "antd_es_app_App.js",
+      "fileHash": "981e3dc9",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-L4MX4JQH": {
+      "file": "chunk-L4MX4JQH.js"
+    },
     "chunk-QOVZGY7A": {
       "file": "chunk-QOVZGY7A.js"
     },
