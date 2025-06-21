@@ -114,7 +114,7 @@ export const CardGenerator: React.FC = () => {
 
       <Flex style={{ alignItems: "center", justifyContent: "center" }}>
         <CSSButton onClick={toggleGeneration}>
-          {isActive ? `${intl.messages["Start"]}` : `${intl.messages["Stop"]}`}
+          {isActive ? `${intl.messages["Stop"]}` : `${intl.messages["Start"]}`}
         </CSSButton>
       </Flex>
 
