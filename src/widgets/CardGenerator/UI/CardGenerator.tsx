@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { CSSBoundingContainer } from "../../../shared/styles";
 // import { useTranslations } from "next-intl";
 import {
@@ -13,7 +13,7 @@ import {
   CSSCards,
 } from "./styles";
 import { Flex } from "antd";
-// import { generateColor } from "../../../shared/library/helper/color-random";
+import { generateColor } from "../../../shared/library/helper/color-random";
 import { getRandomCountdown } from "../../../shared/library/helper/time-random";
 
 interface Card {
@@ -23,7 +23,7 @@ interface Card {
   createdAt: number;
 }
 
-export const CardGenerator = () => {
+export const CardGenerator: React.FC = () => {
   //   const tCardGenerator = useTranslations("home-page");
 
   // Состояния компонента
@@ -33,15 +33,15 @@ export const CardGenerator = () => {
   const [isActive, setIsActive] = useState<boolean>(false);
 
   // Создание новых карточек
-  //   const generateNewCards = useCallback(() => {
-  //     const newCards = Array.from({ length: count }, () => ({
-  //       id: Math.random().toString(36).substring(2, 9),
-  //       bgColor: generateColor(),
-  //       countdown: getRandomCountdown(),
-  //       createdAt: Date.now(),
-  //     }));
-  //     setCards((prev) => [...prev, ...newCards]);
-  //   }, [count]);
+  const generateNewCards = useCallback(() => {
+    const newCards = Array.from({ length: count }, () => ({
+      id: Math.random().toString(36).substring(2, 9),
+      bgColor: generateColor(),
+      countdown: getRandomCountdown(),
+      createdAt: Date.now(),
+    }));
+    setCards((prev) => [...prev, ...newCards]);
+  }, [count]);
 
   // Удаление карточек с истекшим временем
   const removeExpiredCards = () => {
@@ -68,17 +68,17 @@ export const CardGenerator = () => {
       setIsActive(false);
     } else {
       setCards([]);
-      //   generateNewCards();
+      generateNewCards();
       setIsActive(true);
     }
   };
 
   // Для интервальной генерации
-  //   useEffect(() => {
-  //     if (!isActive) return;
-  //     const interval = setInterval(generateNewCards, intervalTime * 1000);
-  //     return () => clearInterval(interval);
-  //   }, [isActive, intervalTime, generateNewCards]);
+  useEffect(() => {
+    if (!isActive) return;
+    const interval = setInterval(generateNewCards, intervalTime * 1000);
+    return () => clearInterval(interval);
+  }, [isActive, intervalTime, generateNewCards]);
 
   // Для проверки времени жизни карточек
   useEffect(() => {
