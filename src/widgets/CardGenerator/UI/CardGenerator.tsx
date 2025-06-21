@@ -62,7 +62,7 @@ export const CardGenerator: React.FC = () => {
     );
   };
 
-  // Запуск/остановка генерации
+  // Запуск/остановка
   const toggleGeneration = () => {
     if (isActive) {
       setIsActive(false);
@@ -73,14 +73,14 @@ export const CardGenerator: React.FC = () => {
     }
   };
 
-  // Для интервальной генерации
+  // Интервальной генерации
   useEffect(() => {
     if (!isActive) return;
     const interval = setInterval(generateNewCards, intervalTime * 1000);
     return () => clearInterval(interval);
   }, [isActive, intervalTime, generateNewCards]);
 
-  // Для проверки времени жизни карточек
+  // Проверка времени карточек
   useEffect(() => {
     const checkInterval = setInterval(() => {
       removeExpiredCards();
