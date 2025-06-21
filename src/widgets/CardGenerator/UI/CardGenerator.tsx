@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect, useCallback } from "react";
 import { CSSBoundingContainer } from "../../../shared/styles";
-// import { useTranslations } from "next-intl";
 import {
   CSSButton,
   CSSInput,
@@ -15,6 +14,7 @@ import {
 import { Flex } from "antd";
 import { generateColor } from "../../../shared/library/helper/color-random";
 import { getRandomCountdown } from "../../../shared/library/helper/time-random";
+import { useIntl } from "react-intl";
 
 interface Card {
   id: string;
@@ -24,7 +24,7 @@ interface Card {
 }
 
 export const CardGenerator: React.FC = () => {
-  //   const tCardGenerator = useTranslations("home-page");
+  const intl = useIntl();
 
   // Состояния компонента
   const [count, setCount] = useState<number>(1);
@@ -92,8 +92,7 @@ export const CardGenerator: React.FC = () => {
   return (
     <CSSBoundingContainer>
       <CSSText>
-        {/* {tCardGenerator("inputCount")}: */}
-        количество карточек
+        {`${intl.messages["inputCount"]}`}:
         <CSSInput
           type="number"
           step="1"
@@ -102,8 +101,7 @@ export const CardGenerator: React.FC = () => {
           onChange={(e) => setCount(Number(e.target.value))}
           disabled={isActive}
         />
-        {/* {tCardGenerator("inputInterval")}: */}
-        Интервал
+        {`${intl.messages["inputInterval"]}`}:
         <CSSInput
           type="number"
           step="1"
@@ -116,7 +114,7 @@ export const CardGenerator: React.FC = () => {
 
       <Flex style={{ alignItems: "center", justifyContent: "center" }}>
         <CSSButton onClick={toggleGeneration}>
-          {isActive ? "Остановить" : "Сгенирировать"}
+          {isActive ? `${intl.messages["Start"]}` : `${intl.messages["Stop"]}`}
         </CSSButton>
       </Flex>
 
