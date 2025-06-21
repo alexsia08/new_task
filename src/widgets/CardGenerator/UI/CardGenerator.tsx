@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { CSSBoundingContainer } from "../../../shared/styles";
 // import { useTranslations } from "next-intl";
 import {
@@ -13,7 +13,7 @@ import {
   CSSCards,
 } from "./styles";
 import { Flex } from "antd";
-import { generateColor } from "../../../shared/library/helper/color-random";
+// import { generateColor } from "../../../shared/library/helper/color-random";
 import { getRandomCountdown } from "../../../shared/library/helper/time-random";
 
 interface Card {
