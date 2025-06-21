@@ -5,6 +5,7 @@ import { CSSBoundingContainer } from "./shared/styles";
 // import { useTranslations } from "next-intl";
 import { Typography } from "antd";
 import { CSSTitle, CSSTextP } from "./styles";
+import { CardGenerator } from "./widgets/CardGenerator";
 
 const { Title, Paragraph } = Typography;
 
@@ -22,6 +23,7 @@ export const App: React.FC = () => {
           генерируются автоматически. Если клинуть на карточку, то таймер
           обновится, иначе она исчезнет когда время истечёт
         </Paragraph>
+        <CardGenerator />
       </CSSBoundingContainer>
     </BrowserRouter>
   );
